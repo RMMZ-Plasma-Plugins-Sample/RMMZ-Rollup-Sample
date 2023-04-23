@@ -2,6 +2,9 @@ name: Plasma_ThinMessageWindow
 year: 2023
 license: MIT
 histories:
+  - date: 2023/04/23
+    version: 1.1.0
+    description: 'スイッチと幅をパラメータ化する'
   - date: 2023/04/16
     version: 1.0.0
     description: '公開'
@@ -9,7 +12,21 @@ locates:
   - ja
 plugindesc:
   ja: 'メッセージウィンドウの幅を変更する'
-parameters: []
+parameters:
+  - param: thinMessageWindowSwitch
+    text:
+      ja: スイッチ
+    desc:
+      ja: このスイッチがONのとき、メッセージウィンドウの幅を細くします。
+    type: switch
+    default: 0
+  - param: thinMessageWindowWidth
+    text:
+      ja: 幅
+    desc:
+      ja: 細くなったメッセージウィンドウの幅を指定します。
+    type: number
+    default: 350
 commands:
 structures:
 help:
