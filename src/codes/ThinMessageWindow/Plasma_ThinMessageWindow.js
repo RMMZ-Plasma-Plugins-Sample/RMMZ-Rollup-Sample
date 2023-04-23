@@ -1,12 +1,14 @@
+import { settings } from "./_build/Plasma_ThinMessageWindow_parameters";
+
 /**
  * メッセージウィンドウの幅を細くするスイッチ
  */
-const THIN_MESSAGE_WINDOW_SWITCH = 12;
+const THIN_MESSAGE_WINDOW_SWITCH = settings.thinMessageWindowSwitch;
 
 /**
  * 細くなったメッセージウィンドウの幅
  */
-const THIN_MESSAGE_WINDOW_WIDTH = 350;
+const THIN_MESSAGE_WINDOW_WIDTH = settings.thinMessageWindowWidth;
 
 function Window_Message_ThinMessageWindowMixIn(windowClass) {
   const _initialize = windowClass.initialize;
